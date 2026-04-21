@@ -4,6 +4,12 @@ R scripts and workflows for the Biochemical Pharmacology manuscript:  "A Robust 
 This repository contains the complete suite of R-scripts associated with the manuscript:  
 **"A Robust Workflow for Exploratory Data Analysis and Outlier Management in Small-Sample Pharmacological Datasets"** (Marino, 2026).
 
+## Interactive Tool
+An interactive version of the Confidence Funnel tool is hosted at [[mjmarino-phd.shinyapps.io](https://mjmarino-phd.shinyapps.io/confidencefunnels/)]
+
+Alternatively, you can run the app locally in R using:
+`shiny::runGitHub('mjmarino-phd/pharmacology-small-sample-EDA', subdir='ConfidenceFunnelApp')`
+
 ##  Overview
 In pharmacological research, experimental constraints often limit sample sizes to $n=7$ to $30$. These scripts provide a practical, beginner-friendly toolkit for:
 
