@@ -1,3 +1,23 @@
+#-------------------------------------------------------------------------------
+# TITLE: ConfidenceFunnelApp/app.R
+# AUTHOR: Michael J. Marino, PhD
+# DATE: 2026-04-20
+# MANUSCRIPT: "A Robust Workflow for Exploratory Data Analysis and Outlier 
+#   Management in Small-Sample Pharmacological Datasets" (Submitted)
+#
+# REPOSITORY: https://github.com/mjmarino-phd/pharmacology-small-sample-EDA
+# 
+# LICENSE: MIT License (c) 2026 Michael J. Marino
+#   Permission is granted to use, modify, and distribute this code for any 
+#   purpose, provided that the manuscript above is cited in any resulting 
+#   publications or derivative works.
+#
+# DESCRIPTION: This is a Shiny implementation of the ConfFunnel_with_Points.R
+#   script written to provide an online tool for the generation of Confidence 
+#   Funnel data visualization
+#----
+
+
 library(shiny)
 
 
