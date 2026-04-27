@@ -100,10 +100,9 @@ plot_caterpillar <- function(CI,n,mu_true,sigma,n_sims,main_title) {
   points(means, 1:n_sims, pch = 20, cex = 0.6, col = colors)
 
   # Add a legend
-  legend("topright", legend = c("Captured", "Missed"), 
-         col = c("steelblue", "orangered"), 
-         lty = 1, 
-         pch = 20, 
+  legend("topright", 
+         legend = c("Captured", "Missed"), 
+         text.col = c("steelblue", "orangered"), 
          bty = "n")
 }
 

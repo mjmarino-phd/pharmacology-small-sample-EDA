@@ -19,7 +19,7 @@
 
 # Clear environment: Prevents variables from previous projects 
 # from interfering with your current analysis.
-rm(list = ls())
+# rm(list = ls())
 
 # Tip for Publication: Journals usually require high-resolution TIFFs.
 # The code below is a "file device." When active, R redirects the plot 
@@ -27,7 +27,7 @@ rm(list = ls())
 # Remove the "#" in the line below and change the Figure file name as needed
 # You will also need to remove the '#' from the last line of code in this file
 
-# tiff("Figure7_Final.tif", width = 8, height = 4.5, units = "in", res = 300, compression = "lzw")
+ tiff("Figure7v2_Final.tif", width = 8, height = 4.5, units = "in", res = 300, compression = "lzw")
 
 #--------------------Figure 7: Confidence Limits for our simulated study--------
 
@@ -89,10 +89,12 @@ plot_caterpillar_compare <- function(CI,n,mu_veh,mu_caf,sigma,n_sims,main_title)
              col = rgb(0/255, 100/255, 0/255, alpha = 0.5))    # Transparent DarkGreen
   }
   
-  # Legend
-  # Clarifies the color-coding for the comparative study.
-  legend("topright", legend = c("Vehicle", "Caffeine"), 
-         col = c("steelblue", "darkgreen"), lty = 1, lwd = 2, bty = "n")
+
+  # Add a legend
+  legend("topright", 
+         legend = c("Vehicle", "Caffeine"), 
+         text.col = c("steelblue", "darkgreen"), 
+         bty = "n")
 }
 
 
