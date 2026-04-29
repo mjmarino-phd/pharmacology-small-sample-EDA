@@ -1,8 +1,8 @@
 # pharmacology-small-sample-EDA
-R scripts and workflows for the Biochemical Pharmacology manuscript:  "A Robust Workflow for Exploratory Data Analysis and Outlier Management in Small-Sample Pharmacological Datasets" (Submitted to Biochemical Pharmacology)
+R scripts and workflows for the Biochemical Pharmacology manuscript:  "Beyond Bar Charts: A Practical Guide To Small Sample Pharmacological Data" (Submitted to Biochemical Pharmacology)
 
 This repository contains the complete suite of R-scripts associated with the manuscript:  
-**"A Robust Workflow for Exploratory Data Analysis and Outlier Management in Small-Sample Pharmacological Datasets"** (Marino, 2026).
+**"Beyond Bar Charts: A Practical Guide To Small Sample Pharmacological Data"** (Sachs & Marino, 2026).
 
 ## Interactive Tool
 An interactive version of the Confidence Funnel tool is hosted at [[mjmarino-phd.shinyapps.io](https://mjmarino-phd.shinyapps.io/confidencefunnels/)]
@@ -13,7 +13,7 @@ Alternatively, you can run the app locally in R using:
 ##  Overview
 In pharmacological research, experimental constraints often limit sample sizes to $n=7$ to $30$. These scripts provide a practical, beginner-friendly toolkit for:
 
-* **Outlier Detection:** Applying Dixon’s Q-test and Grubbs' test with modern precision.
+* **Outlier Detection:** Applying Dixon’s Q-test.
 * **Effect Size Estimation:** Calculating Cohen’s $d$, Hedges’ $g$, and Cliff’s Delta.
 * **Data Visualization:** Generating high-quality, reproducible figures for publication.
 * In addition, the R-scripts employed to generate figures 1 - 9 of the manuscript are included
@@ -32,7 +32,7 @@ The repository includes 16 annotated R-scripts. If you are new to R, we recommen
 8.  `Fig8_final.R`: Introduction of 'Confidence Funnel' plots as a novel data visualization tool
 9.  `Fig9_final.R`: A final summary figure suggested as an ideal method to report small data set results
 10.  `GenerateSampleData.R`: Script used to search for the type of data set used as a case study in the manuscript.
-11.  `SimpleDixonQ.R`: A highly annoted example of how the `dixon.test` function works in R
+11.  `SimpleDixonQ.R`: A highly annotated example of how the `dixon.test` function works in R
 12.  `AutomatedDixonQ.R`: A fully automated implementation of the outlier screen logic presented in the manuscript provided as a tool for analyzing data in CSV files formatted like `CaffeineData.csv` containing any number of groups
 13.  `Cum_ProbabilityObservingOutlier.R`: Application of the binomial theorem to estimate the probability of observing 1, 2, or 3 outliers based on sample size
 14.  `EffectSIzeCalculator.R`: Calculates  Cohen's d, Hedges' g, and Cliff's Delta all with 95% CIs for data in CSV files formatted like `CaffeineData.csv` containing two groups
